@@ -1,0 +1,12 @@
+<Page loaded="loaded">
+	<StackLayout orientation="vertical">
+		<!--logo-->
+		<Image src="res://logo" stretch="none" horizontalAlignment="center" />
+		<!--campos-->
+		<TextField id="email" text="{{ email }}" hint="Correo electrónico" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+		<TextField secure="true" text="{{ password }}" hint="Contraseña" />
+		<!--botones-->
+		<Button text="Ingresar" tap="signIn"/>
+		<Button text="Registrarse en Groceries" class="link" tap="register"/>
+	</StackLayout>
+</Page>
